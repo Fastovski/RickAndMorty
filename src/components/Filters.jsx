@@ -2,7 +2,7 @@ import React from "react";
 
 const Filters = ({ onFilterChange }) => {
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value} = e.target;
     onFilterChange(name, value);
   };
 
@@ -15,11 +15,16 @@ const Filters = ({ onFilterChange }) => {
         onChange={handleInputChange}
       />
       <select name="status" onChange={handleInputChange}>
-        <option value="">Status</option>
+        <option value="">All</option>
         <option value="alive">Alive</option>
         <option value="dead">Dead</option>
         <option value="unknown">Unknown</option>
       </select>
+
+      {/* <select name="Location" onChange={handleInputChange}>
+        <option value="">All</option>
+        <option value="Planet">Planet</option>
+      </select> */}
     </div>
   );
 };

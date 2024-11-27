@@ -1,0 +1,120 @@
+/* Общий стиль страницы */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Темный фон */
+    color: #ffffff; /* Белый текст */
+    line-height: 1.5;
+  }
+  
+  h1, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Стили для навигации */
+  .navbar {
+    background-color: #1f1f1f; /* Темно-серый фон */
+    padding: 1rem;
+    text-align: center;
+    color: #61dafb; /* Акцентный синий цвет */
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Сетка для списка персонажей */
+  .character-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Адаптивная сетка */
+    gap: 10px; /* Расстояние между ячейками */
+    padding: 20px;
+  }
+  
+  /* Ячейка персонажа */
+  .character-card {
+    background-color: #1e1e1e; /* Фон ячейки */
+    border-radius: 10px; /* Скругленные углы */
+    overflow: hidden; /* Обрезать содержимое по границе */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #ffffff;
+  }
+  
+  .character-card:hover {
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Увеличение тени */
+  }
+  
+  /* Изображение персонажа */
+  .character-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Контент ячейки */
+  .character-card h3 {
+    font-size: 1.2rem;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .character-card p {
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0 10px 10px;
+    color: #bdbdbd; /* Светло-серый текст */
+  }
+  
+  /* Фильтры */
+  .filters {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .filters input,
+  .filters select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #333333;
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  /* Пагинация */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+  }
+  
+  .pagination button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .pagination button:hover {
+    background-color: #444444;
+  }
+  
+  .pagination button:disabled {
+    background-color: #555555;
+    cursor: not-allowed;
+  }
+  
+  .pagination span {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  

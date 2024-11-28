@@ -4,8 +4,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <h1>Rick and Morty</h1>
-      <div><a href="/location">Локации</a></div>
-      <div><a href="/location">Эпизоды</a></div>
+      <div className="navbar-links">
+      <a href="/">Персонажи</a>
+        <a href="/location">Локации</a>
+        <a href="/episodes">Эпизоды</a>
+      </div>
     </nav>
   );
 };

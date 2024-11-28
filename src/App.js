@@ -5,6 +5,7 @@ import Location from "./pages/Location";
 import Home from "./pages/Home";
 import CharacterDetails from "./pages/CharacterDetails";
 import './styles/global.css'
+import LocationDetails from "./pages/LocationDetails";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/location" element = {<Location/>}/>
         <Route path="/character/:id" element={<CharacterDetails />} />
+        <Route path="/location/:id" element={<LocationDetails />} />
       </Routes>
     </Router>
   );

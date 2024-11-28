@@ -7,7 +7,6 @@ const Navbar = () => {
       <div className="navbar-links">
       <a href="/">Персонажи</a>
         <a href="/location">Локации</a>
-        <a href="/episodes">Эпизоды</a>
       </div>
     </nav>
   );
